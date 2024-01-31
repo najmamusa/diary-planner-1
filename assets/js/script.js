@@ -1,7 +1,21 @@
 //Display Current Date in Header
 var currentDay = $("#currentDay");
 currentDay.text (moment().format('dddd, MMM Do YYYY'));
-    
+
+// Display Current Date in Header
+var currentDay = $("#currentDay");
+currentDay.text(moment().format('dddd, MMM Do YYYY'));
+
+// Display Current Time
+var currentTimeElement = $("#currentTime");
+
+function updateCurrentTime() {
+    currentTimeElement.text(moment().format('h:mm:ss A'));
+}
+
+// Update current time every second
+setInterval(updateCurrentTime, 1000);
+
 //Find Current Hour
 var currentHour = moment().hour();
 
