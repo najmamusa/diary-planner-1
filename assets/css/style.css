@@ -1,167 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
-
 body {
-  font-family: 'Urbanist', sans-serif;
-  font-size: clamp(1rem, 0.9118rem + 0.4706vw, 1.5rem);
-  color: white;
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 
-.display-4 {
-  font-weight: 700;
-}
-
-::selection {
-  color: rgb(255, 255, 255);
-  background: rgb(109, 109, 109);
-}
-
-textarea {
+textarea{
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
+  border-left: 1px solid black;
   padding: 10px;
-  white-space: normal;
 }
 
-textarea:focus, input:focus{
-  outline: none;
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
 }
 
-.description {
+.description{
   white-space: pre-wrap;
 }
 
-.time-block {
-  border-radius: 12px;
-  margin-bottom: 12px;
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
 }
 
 .hour {
-  background-color: #646464;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #ffffff;
-}
-
-.past textarea {
-  color: #000000;
-}
-
-.past textarea:hover {
-  background-color: #d5d5d5;
-  transition: all 0.2s ease-in-out;
+  background-color: #d3d3d3;
+  color: black;
 }
 
 .present {
-  background-color: rgb(246, 96, 50);
-}
-
-.present textarea {
+  background-color: #ff6961;
   color: white;
-}
-
-.present textarea:hover {
-  background-color: rgb(234, 76, 27);
-  transition: all 0.2s ease-in-out;
 }
 
 .future {
-  background-color: rgb(80, 202, 92);
-}
-
-.future textarea:hover {
-  background-color: rgb(39, 192, 57);
-  transition: all 0.2s ease-in-out;
-}
-
-.saveBtn {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: #066dd5;
+  background-color: #77dd77;
   color: white;
 }
 
-.saveBtn:hover {
-  transition: all 0.2s ease-in-out;
-  background-color: #0180ff;
-  color: rgb(0, 0, 0);
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
 }
 
-.saveBtn:active {
-  background-color: #0063c6;
-  transition: all 0.1s ease-in-out;
-}
-
-.btn:focus,.btn:active {
-  outline: none !important;
-  box-shadow: none;
-}
-
-.bi {
-  font-size: x-large;
-}
-
-.spacer-bottom {
-  height: 6vh;
-}
-
-.saved-task {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tooltip-bubble {
-  height: 2vh;
-  width: 20vw;
-  border-radius: 3px;
-  background-color: rgb(39, 192, 57);
-  margin: 0 auto;
-  margin-top: 3vh;
-  padding-block: 20px;
-}
-
-.tooltip-spacer {
-  height: 2vh;
-  width: 20vw;
-  margin: 0 auto;
-  margin-top: 3vh;
-  padding-block: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .saved-task {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .tooltip-bubble {
-    margin-top: 20px;
-    height: 3vh;
-    width: 50vw;
-    padding-block: 20px;
-  }
-  
-  .tooltip-spacer {
-    height: 3vh;
-    width: 50vw;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-block: 20px;
-  }
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
 }
