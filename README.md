@@ -18,8 +18,7 @@ The app should be as follows:
 - When a user clicks a timeblock, allow them to input an event.
 
 - When the save button is hit during that timeblock, the event is saved locally.
-
-
+![diary-planner-gif (1)](https://github.com/najmamusa/diary-planner-1/assets/110435863/73d261b8-d836-48a8-8988-ca7fc73f9106)
 ## License
 MIT License
 
